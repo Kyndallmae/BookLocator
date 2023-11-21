@@ -78,7 +78,7 @@ const SearchBooks = () => {
         throw new Error('something went wrong!');
       }
 
-      // Ff book successfully saves to user's account, save book id to state
+      // If book successfully saves to user's account, save book id to state
       setSavedBookIds([...savedBookIds, bookToSave.bookId]);
     } catch (err) {
       console.error(err);
